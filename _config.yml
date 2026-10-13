@@ -1,0 +1,9 @@
+title: Observational Chronicles
+email: editor@example.com
+description: >-
+  A collection of field notes, tragic occurrences, and everyday archeology.
+baseurl: ""
+url: ""
+markdown: kramdown
+plugins:
+  - jekyll-feed

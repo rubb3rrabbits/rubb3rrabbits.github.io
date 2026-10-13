@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 780px; margin: 40px auto; padding: 0 20px; color: #222; background: #fafafa; }
+    header { border-bottom: 2px solid #eee; padding-bottom: 20px; margin-bottom: 40px; }
+    header h1 { margin: 0; }
+    header a { text-decoration: none; color: inherit; }
+    article { background: white; padding: 30px; border-radius: 8px; border: 1px solid #e0e0e0; }
+    img.post-banner { width: 100%; border-radius: 6px; margin-bottom: 20px; }
+    ul.posts { list-style: none; padding: 0; }
+    ul.posts li { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
+    ul.posts a { font-size: 1.3rem; font-weight: bold; text-decoration: none; color: #0366d6; }
+    .meta { color: #666; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+    <p>{{ site.description }}</p>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+</body>
+</html>

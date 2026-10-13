@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<article>
+  {% if page.image %}
+    <img class="post-banner" src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  {% endif %}
+  <h2>{{ page.title }}</h2>
+  <p class="meta">Published on {{ page.date | date: "%B %d, %Y" }}</p>
+  <div>
+    {{ content }}
+  </div>
+  <p style="margin-top: 40px;"><a href="{{ '/' | relative_url }}">&larr; Back to all essays</a></p>
+</article>
